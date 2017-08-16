@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <script type="text/javascript" src="scripts/jquery.js"></script>
+    <script type="text/javascript">
+        window.onload = function() {
+            alert('Window loaded');
+        };
+
+        $(document).ready(function() {
+            $(':input').each(function() {
+                var elem = $(this); //This is wrapped in a jQuery wrapper
+                alert(elem.val);
+
+            });
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="myContent">
+        My jQuery enabled Page!
+
+    </div>
+
+
+
+</body>
+
+</html>
