@@ -83,5 +83,20 @@
     };
 }
 function removeDnDHandlers() {
+    var currentCart = null;
+
+    currentCart = JSON.parse(localStorage.getItem('cart'));
+    if (!currentCart) {
+        createEmptyCart();
+    }
+
+    function createEmptyCart() {
+        localStorage.clear();
+        localStorage.setItem("cart", JSON.stringify(new Cart()));
+        currentCart = JSON.parse(localStorage.getItem("cart"));
+    }
+
+
+
     
 }
