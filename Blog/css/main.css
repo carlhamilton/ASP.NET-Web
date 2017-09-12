@@ -9,3 +9,8 @@
 a {
     color: #081679;
 }
+#imgcentre img {
+  
+    display: block;
+    margin: 0 auto;
+}
